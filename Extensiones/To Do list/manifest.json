@@ -1,0 +1,34 @@
+{
+    "manifest_version": 2,
+    "name": "To Do",
+    "description": "Track ur day",
+    "version": "1.0",
+
+    "icons": {
+      "16": "todo.png",
+      "32": "todo.png",
+      "48": "todo.png",
+      "128": "todo.png"
+    },
+    "browser_action": {
+      "default_icon": {
+        "16": "todo.png",
+        "32": "todo.png",
+        "48": "todo.png",
+        "128": "todo.png"
+      },
+      "default_popup": "popup.html"
+    },
+
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+
+    "permissions": [
+      "activeTab",
+      "alarms",
+      "storage",
+      "notifications"
+    ]
+  }
